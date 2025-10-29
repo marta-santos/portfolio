@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Marta Santos</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
+<link href="jquery.fancybox-1.3.1.css" rel="stylesheet" type="text/css"  media="screen" />
+<link href="SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.fancybox-1.3.1.js" type="text/javascript"></script>
+<script src="SpryCollapsiblePanel.js" type="text/javascript"></script>
+
+<!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta2)/IE9.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">
+        $(document).ready(function() {
+                $("a[rel=grupo1]").fancybox({
+                   'transitionIn'       : 'elastic',
+                   'transitionOut'      : 'elastic',
+                   'titlePosition'  : 'over',
+                   'titleFormat'        : function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Imagem ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+			$("a[rel=grupo2]").fancybox({
+                   'transitionIn'       : 'elastic',
+                   'transitionOut'      : 'elastic',
+                   'titlePosition'  : 'over',
+                   'titleFormat'        : function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Imagem ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="background">
+<img id="fundo" src="fotos/fundo.jpg" alt="fundo" />
+</div>
+<div id="scroller">
+	<div id="imagem"></div>
+    <div id="wrap">
+            <div id="infographic-container">
+                <div class="infographic clearfix">
+                    <a href="#home" id="home" class="circle trigger">Home</a>
+                    <a href="#portefolio" id="portefolio" class="circle trigger">Portefólio</a>
+                    <a href="#sobremim" id="sobremim" class="circle trigger">Sobre Mim</a>
+                    <a href="#contactos" id="contactos" class="circle trigger">Contactos</a>
+                </div>
+
+                <div id="infographic-content">
+                    <div id="infographic-content-container">
+						
+                      <section id="home-content">
+                            <p>
+                            <big>Em Destaque Últimos Projetos</big>
+                            </p>
+                            <table width="650" border="0">
+  <tr>
+    <td> <a href="http://www.martasantos.com/unlockporto" target="_blank"><img src="fotos/logo_principal.png" width="200"  /></a></td>
+      <td><a href="http://www.martasantos.com/vestigium" target="_blank"><img src="fotos/vestigium.png" width="200"  /></a> </td>
+
+  </tr>
+  <tr>
+    <td> <p>   Projeto de Transmedia Storytelling  </p></td>
+    <td>      <p> Instalação Multimédia Interativa  </p></td>
+  </tr>
+</table>
+  
+                            </br>
+                            
+                            <p>                  
+                            <big>
+                              Olá! 
+                            </big>
+                            </p>
+                            
+                            <p>Sou a <big>Marta Santos.</big> Estudo Multimédia e este site tem como propósito dar a conhecer o meu trabalho e também um pouco de mim, sendo por isso um <a href="#portefolio" id="portefolio" class="circle trigger"><big> portefólio</big></a> e uma pequena  <a href="#sobremim" id="sobremim" class="circle trigger"><big> biografia</big></a> online.</p>
+                            
+                            <p>Se tiveres sugestoes e opiniões a dar entra em <a href="#contactos" id="contactos" class="circle trigger"><big> contacto</big></a> comigo.</p>
+                        </section>
+
+                        <section id="portefolio-content" class="hide">
+                        
+                        <div id="CollapsiblePanel1" class="CollapsiblePanel">
+                              <div class="CollapsiblePanelTab" tabindex="0">Instalações Interativas</div>
+                              <div class="CollapsiblePanelContent">                            
+                              <h1>InFlux</h1>
+                            <iframe src="http://player.vimeo.com/video/90963153" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            <p>2014</p>
+                            <p>Projeto Final da Disciplina de Laboratório III</p>
+                            <p>3ºano - TCM - ESMAE - IPP</p>
+                            
+                            </br>
+                            
+                            <h1>IVElementis</h1>
+                            <iframe src="http://player.vimeo.com/video/90963154" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            <p>2013</p>
+                            <p>Trabalho Intercalar da Disciplina de Laboratório III</p>
+                            <p>3ºano - TCM - ESMAE - IPP</p>
+                              
+							</div>
+                          </div>
+                        
+                          <div id="CollapsiblePanel2" class="CollapsiblePanel">
+                            <div class="CollapsiblePanelTab" tabindex="0">Web</div>
+                            <div class="CollapsiblePanelContent">
+                            
+                             <a href="http://martasantos.com/dulombi" target="_blank"><h1>Missão Dulombi</h1></a>
+                            <p><a href="http://martasantos.com/dulombi" target="_blank"><img src="fotos/dulombi.png" width="200" height="125" /></a></p>
+                            <p>2014 - Proposta de site e backoffice para a organização Missão Dulombi</p>
+                           
+                            <a href="http://martasantos.com/evolucao" target="_blank"><h1>Homo Machinam</h1></a>
+                            <p><a href="http://martasantos.com/evolucao" target="_blank"><img src="fotos/evolucao.png" width="200" height="125" /></a></p>
+                            <p>2014</p>
+                            
+                            
+                            <a href="http://martasantos.com/cores" target="_blank"><h1>Todas as cores do céu</h1></a>
+                            <p><a href="http://martasantos.com/cores" target="_blank"><img src="fotos/cores.png" width="200" height="125" /></a></p>
+                            <p>2013</p>
+                            
+                            <a href="http://grifu.com/esmae/tcm2012/Marta.Santos/" target="_blank"><h1>www.grifu.com/esmae/tcm2012/Marta.Santos</h1></a>
+                            <p><a href="http://grifu.com/esmae/tcm2012/Marta.Santos/" target="_blank"><img src="fotos/siteiri.jpg" width="200" height="125" /></a></p>
+                            <p>2012 - Site desenvolvido no âmbito da disciplina de Laboratório I, do 1º ano, do curso de TCM, da ESMAE - IPP.</p>
+                            <p>Este trabalho foi desenvolvido recorrendo ao Dreamweaver e utilizando html 5, associado a ficheiros CSS e JavaScript.</p>
+                            
+                             <a href="http://www.croquiplanta.com" target="_blank"><h1>www.croquiplanta.com</h1></a>
+                            <p><a href="http://www.croquiplanta.com" target="_blank"><img src="fotos/sitecroq.jpg" width="200" height="118" /></a></p>
+                            <p>2012 - Site para a empresa Croquiplanta.</p>
+                            
+ <a href="http://www.dontworrybehappy.pt.la" target="_blank"><h1>www.dontworrybehappy.pt.la</h1></a>
+                            <p><a href="http://www.dontworrybehappy.pt.la" target="_blank"><img src="fotos/sitedont.jpg" width="200" height="105" /></a></p>
+                            <p>2009 - Site realizado em Microsoft FrontPage, como parte integrante do projecto desenvolvido na disciplina de Área de Projeto de 12º ano.</p>
+                            
+                            </div>
+                           </div>
+                            
+           				<div id="CollapsiblePanel3" class="CollapsiblePanel">
+                              <div class="CollapsiblePanelTab" tabindex="0">Design</div>
+                              <div class="CollapsiblePanelContent">                            
+                              <a href="fotos/logotipo.jpg" title="Logótipo Croquiplanta" rel="grupo2"><img src="fotos/logotipo.jpg" width="200" /></a>
+                              
+                              <p>2012 - Logótipo criado para a empresa Croquiplanta.</p>
+                              
+                              <a href="fotos/designfinal.pdf" target="_blank"><img src="fotos/designfinal.jpg" width="200" /></a>
+                              
+                              <p>2012</p>
+                              <p>Projecto de grafismo editorial que teve como objectivo a concepção de uma pequena publicação, sobre os parques de Sintra.</p>
+                              
+							</div>
+                          </div>
+                          
+                          <div id="CollapsiblePanel4" class="CollapsiblePanel">
+                            <div class="CollapsiblePanelTab" tabindex="0">Fotografia</div>
+                            <div class="CollapsiblePanelContent">
+                            <a href="fotos/foto_2.jpg" rel="grupo1"><img src="fotos/foto_2_p.jpg" width="200" height="133" /></a>
+                            <a href="fotos/foto_3.jpg" rel="grupo1"><img src="fotos/foto_3_p.jpg" width="200" height="133" /></a>
+                            <a href="fotos/foto_4.jpg" rel="grupo1"><img src="fotos/foto_4_p.jpg" width="200" height="133" /></a>
+                            <a href="fotos/foto_5.jpg" rel="grupo1"><img src="fotos/foto_5_p.jpg" width="200" height="133" /></a>
+                            <a href="fotos/foto_6.jpg" rel="grupo1"><img src="fotos/foto_6_p.jpg" width="200" height="133" /></a>
+                            <a href="fotos/foto_7.jpg" rel="grupo1"><img src="fotos/foto_7_p.jpg" width="200" height="133" /></a>
+                            </div>
+                          </div>
+                          
+                          <div id="CollapsiblePanel5" class="CollapsiblePanel">
+                            <div class="CollapsiblePanelTab" tabindex="0">Animação</div>
+                            <div class="CollapsiblePanelContent">
+                            
+                            <h1>Wild Animals</h1>
+                            <iframe src="http://player.vimeo.com/video/40479484" width="620" height="496" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            <p>2011</p>
+                            <p>Trabalho 2 da Disciplina de Animação I</p>
+                            <p>1ºano - TCM - ESMAE - IPP</p>
+                            
+                            <h1>Em Viagem...</h1>
+                            <iframe src="http://player.vimeo.com/video/35722495" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            <p>2012</p>
+                            <p>Trabalho Final de Disciplina de Animação I</p>
+                            <p>1ºano - TCM - ESMAE - IPP</p>
+                            
+                            <h1>That's Entropy</h1>
+                            <iframe src="http://player.vimeo.com/video/75417275" width="620" height="348" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <p>2013</p>
+                            <p>Projeto desenvolvido em Processing.</p>
+                            <p>Trabalho Intercalar de Disciplina de Programação III</p>
+                            <p>2ºano - TCM - ESMAE - IPP</p>
+                            </div>
+                          </div>
+                          
+                          <div id="CollapsiblePanel6" class="CollapsiblePanel">
+                            <div class="CollapsiblePanelTab" tabindex="0">Vídeo</div>
+                            <div class="CollapsiblePanelContent">
+                            
+                             
+                            <h1>Mon noM</h1>
+                         
+                            <iframe src="//player.vimeo.com/video/116463938" width="620" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <p>2014</p>
+                            
+                            <br />
+                            
+                            <h1>Não te deixes vender</h1>
+                            <iframe src="http://player.vimeo.com/video/49600539" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            <p>2012</p>
+                            <p>Trabalho 1 da Disciplina de Vídeo I</p>
+                            <p>1ºano - TCM - ESMAE - IPP</p>
+                            
+                            <br />
+                            
+                            <h1>Já não tinha que ser...</h1>
+                            <iframe src="http://player.vimeo.com/video/49600537" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                            <p>2012</p>
+                            <p>Trabalho Final de Disciplina de Vídeo I</p>
+                            <p>1ºano - TCM - ESMAE - IPP</p>
+                            
+                            <br />
+                            
+                            <h1>Dar à luz</h1>
+                            <iframe src="http://player.vimeo.com/video/75419293" width="620" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <p>2012</p>
+                            <p>Trabalho realizado no âmbito da Disciplina de Fotografia II</p>
+                            <p>2ºano - TCM - ESMAE - IPP</p>
+                            </div>
+                          </div>
+
+                        </section>
+
+                        <section id="sobremim-content" class="hide">
+                        
+                        <div id="eu"><img src="fotos/eupol.png" width="313" height="331" /></div>
+                        <p><b>Nome:</b> Marta Catarina Amparo dos Santos</p>
+                            <p><b>Data de Nascimento:</b> 3/12/1992</p>
+                            <p><b>Naturalidade:</b> Porto</p>
+                            <br class="clear" />
+                            <p><b>Percurso académico:</b></p>
+                            <p>
+                       	  <ul>
+                            		<li>Frequentei o ensino secundário na área Cientifico-Humanística, em Ciências e Tecnologias na Escola Secundária de Ermesinde. Média final: 18,10 valores.</li>
+                                    <li>No ano lectivo 2010/2011, frequentei o 1º ano do Mestrado Integrado em Arquitectura na FAUP, UP. Média de entrada: 19,05 valores.</li>
+                                    <li>No ano lectivo 2011/2012, entrei para o 1º ano da Licenciatura em Tecnologias da Comunicação Multimédia na ESMAE, IPP. Média de entrada: 18,77 valores.</li>
+                                    <li>Frequento atualmente o Mestrado em Multimédia da Faculdade de Engenharia da Universidade do Porto.</li>
+						  </ul>
+                             </p>
+							<p><b>Áreas de interesse:</b></p>
+                            <p>
+                       	  <ul>
+                                    <li>Fotografia</li>
+                                    <li>Turismo</li>
+                                    <li>Culinária</li>
+                                    <li>Vegetarianismo</li>
+                                    <li>Informática</li>
+                                    <li>Tecnologia</li>
+                                    <li>Cinema</li>
+                                    <li>Multimédia </li>
+                                    <li>Ecologia</li>
+                          </ul>
+                            </p>
+                            
+                      </section>
+                        
+                        <section id="contactos-content" class="hide">
+                 
+                            <div class="div-form">
+                            <h1>Formulário de Contato</h1>
+                                <form action="envia-email.php" method="post">
+                                    <fieldset>
+                                        <p><label for="nome">Nome:</label></p>
+                                        <input type="text" name="nome" size="30" class="width233" />
+                                        <p><label for="email">E-mail:</label></p>
+                                        <input type="text" name="email" size="30" class="width233"/>
+                                        <p><label for="texto">Texto:</label></p>
+                                        <textarea name="texto" rows="10" class="width233"></textarea><br />
+                                        <input type="submit" name="enviar" value="Enviar" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                            
+                            <p>
+                                <b>E-mail:</b> <a href="mailto:marta.santos.718@gmail.com">marta.santos.718@gmail.com</a>
+                            </p>
+                            <p>
+								<b>Facebook:</b> <a href="https://www.facebook.com/marta.amparo.santos" target="_blank">https://www.facebook.com/marta.amparo.santos</a>
+                             </p>
+                             <p>
+								<b>LinkedIn:</b> <a href="https://www.linkedin.com/in/martaamparosantos" target="_blank">       https://www.linkedin.com/in/martaamparosantos</a>
+                             </p>
+                      
+                             <p>
+								<b>Vimeo:</b> <a href="http://www.vimeo.com/martasantos" target="_blank">www.vimeo.com/martasantos</a>
+                             </p>
+                           
+                        </section>
+                    </div>
+                </div>
+        </div>
+
+        <footer class="clearfix">
+            <p>Copyright &copy; 2012 MartaSantos.</p>
+        </footer>
+        
+    </div>
+</div>
+
+    <script type="text/javascript" charset="utf-8">
+
+        $(document).ready(function() {
+            $('#infographic-container').animate({opacity: 1}, 140);
+
+            $('.trigger').live('click', function(e) {
+                e.preventDefault();
+
+                $(this).addClass('active');
+                var target  = $(this).attr('href');
+
+                $('.circle').each(function() {
+                    if($(this).attr('href') != target) {
+                        $(this).removeClass('active');
+                    }
+                });
+
+                $('#infographic-content-container').fadeOut(230, function() {
+                    $('#infographic-content-container').children().hide();
+                    $(target + '-content').show();
+                    $('#infographic-content-container').fadeIn(230);
+                });
+            });
+        });
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-91609-12']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+        })();
+		
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", {contentIsOpen:false});
+var CollapsiblePanel2 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2", {contentIsOpen:false});
+var CollapsiblePanel3 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel3", {contentIsOpen:false});
+var CollapsiblePanel4 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4", {contentIsOpen:false});
+var CollapsiblePanel5 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5", {contentIsOpen:false});
+var CollapsiblePanel6 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6", {contentIsOpen:false});
+	</script>
+
+</body>
+</html>
