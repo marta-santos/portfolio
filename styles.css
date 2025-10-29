@@ -114,70 +114,35 @@ a:hover{
 }
 
 .infographic a#home {
-	background-image:url(menu/menuoffesq-01.png);
-	color:#b9a09c;
+	color:#fff;
 	text-decoration:none;
 	padding:10px;
 	font-size:20px;
 }
 
 .infographic :hover#home,
-.infographic #home.active {
-	color:#975c94;
-	background-image:url(menu/menu.png);
-	font-weight:bold;
-}
-
-.infographic a#portefolio {
-    background-image:url(menu/menuoff-01.png);
-	color:#b9a09c;
-	text-decoration:none;
-	padding:10px;
-	font-size:20px;
-	border-left:1px solid #975c94;
-}
-
+.infographic #home.active,
 .infographic :hover#portefolio,
-.infographic #portefolio.active {
-	color:#975c94;
-	background-image:url(menu/menu.png);
-	font-weight:bold;
-	border-left:1px solid #975c94;
-}
-
-.infographic a#sobremim {
-    background-image:url(menu/menuoff-01.png);
-	color:#b9a09c;
-	text-decoration:none;
-	padding:10px;
-	font-size:20px;
-	border-left:1px solid #975c94;
-}
-
+.infographic #portefolio.active,
 .infographic :hover#sobremim,
-.infographic #sobremim.active {
+.infographic #sobremim.active,
+.infographic :hover#contactos,
+.infographic #contactos.active{
 	color:#975c94;
-	background-image:url(menu/menu.png);
 	font-weight:bold;
-	border-left:1px solid #975c94;
+	border-bottom: 3px solid #fff;
 }
 
-.infographic a#contactos {
-	background-image:url(menu/menuoffdir-01.png);
-	color:#b9a09c;
+.infographic a#portefolio,
+.infographic a#sobremim,
+.infographic a#contactos{
+	color:#fff;
 	text-decoration:none;
 	padding:10px;
 	font-size:20px;
 	border-left:1px solid #975c94;
 }
 
-.infographic :hover#contactos,
-.infographic #contactos.active {
-    color:#975c94;
-	background-image:url(menu/menu.png);
-	font-weight:bold;
-	border-left:1px solid #975c94;
-}
 
 #infographic-content {
     margin-bottom: 50px;
