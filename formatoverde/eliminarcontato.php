@@ -31,25 +31,28 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 }
 
-$cod=$_POST['cod'];
-$visivel=$_POST['visivel'];
-
-if($visivel== 0){
-mysql_query("UPDATE portfolio SET visivel='1' WHERE cod='".$cod."'");
-}
-
-if($_POST['visivel']=="1"){
-mysql_query("UPDATE portfolio SET visivel='0' WHERE cod='".$cod."'");
-} 
+if ((isset($_GET['cod'])) && ($_GET['cod'] != "")) {
+  $deleteSQL = sprintf("DELETE FROM contatos WHERE cod=%s",
+                       GetSQLValueString($_GET['cod'], "text"));
 
   mysql_select_db($database_formatoverde, $formatoverde);
-  $Result1 = mysql_query($updateSQL, $formatoverde) or die(mysql_error());
+  $Result1 = mysql_query($deleteSQL, $formatoverde) or die(mysql_error());
 
-  $updateGoTo = "banners.php";
+  $deleteGoTo = "contatos.php";
   if (isset($_SERVER['QUERY_STRING'])) {
-    $updateGoTo .= (strpos($updateGoTo, '?')) ? "&" : "?";
-    $updateGoTo .= $_SERVER['QUERY_STRING'];
+    $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
+    $deleteGoTo .= $_SERVER['QUERY_STRING'];
   }
-  header(sprintf("Location: %s", $updateGoTo));
-
+  header(sprintf("Location: %s", $deleteGoTo));
+}
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+</html>
